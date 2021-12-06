@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "(lldb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
             "name": "day 01",
             "type": "cppvsdbg",
             "request": "launch",
@@ -13,7 +25,7 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "console":"integratedTerminal",
+            "console": "integratedTerminal",
             "preLaunchTask": "build day 01",
         },
         {
@@ -30,14 +42,15 @@
         },
         {
             "name": "day 03",
-            "type": "cppvsdbg",
+            "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/zig-out/bin/day03.exe",
+            "program": "${workspaceFolder}/zig-out/bin/day03",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "console":"integratedTerminal",
+            "externalConsole": false,
+            "MIMode": "lldb",
             "preLaunchTask": "build day 03",
         },
         {
